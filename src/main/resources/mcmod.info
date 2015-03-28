@@ -1,0 +1,16 @@
+[
+{
+  "modid": "patch",
+  "name": "Patch",
+  "description": "PatchCore",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Txuritan"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

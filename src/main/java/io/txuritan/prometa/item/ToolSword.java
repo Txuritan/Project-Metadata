@@ -2,6 +2,7 @@ package io.txuritan.prometa.item;
 
 import io.txuritan.prometa.Info;
 import io.txuritan.prometa.creativetab.CreativeTab;
+
 import net.minecraft.item.ItemSword;
 
 public class ToolSword extends ItemSword

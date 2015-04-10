@@ -1,17 +1,25 @@
 package io.txuritan.prometa.init;
 
+import io.txuritan.prometa.Info;
+import io.txuritan.prometa.armor.Armor;
+import io.txuritan.prometa.item.MultiItemOne;
+import io.txuritan.prometa.item.ToolAxe;
+import io.txuritan.prometa.item.ToolHoe;
+import io.txuritan.prometa.item.ToolPickaxe;
+import io.txuritan.prometa.item.ToolSpade;
+import io.txuritan.prometa.item.ToolSword;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
-import io.txuritan.prometa.Info;
-import io.txuritan.prometa.armor.*;
-import io.txuritan.prometa.item.*;
 
 @GameRegistry.ObjectHolder(Info.MODID)
 public class ModItems
 {
+	public static Item multiItemone ;
+	
 	public static Item txuriteHelmet;
 	public static Item txuriteChestplate;
 	public static Item txuriteLeggings;
@@ -43,7 +51,9 @@ public class ModItems
 	public static ToolMaterial YURITE_TOOL = EnumHelper.addToolMaterial("YURITE_TOOL", 3, 1000, 15.0F, 4.0F, 40);
 	
 	public static void init()
-	{	
+	{
+		GameRegistry.registerItem(multiItemone = new MultiItemOne("metaitem"), "metaitem");
+		
 		GameRegistry.registerItem(txuriteHelmet = new Armor("txurite_helmet", TXURITE_ARMOR, "txurite", 0), "txurite_helmet");
 		GameRegistry.registerItem(txuriteChestplate = new Armor("txurite_chestplate", TXURITE_ARMOR, "txurite", 1), "txurite_chestplate");
 		GameRegistry.registerItem(txuriteLeggings = new Armor("txurite_leggings", TXURITE_ARMOR, "txurite", 2), "txurite_leggings");

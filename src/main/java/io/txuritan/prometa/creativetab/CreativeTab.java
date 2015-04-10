@@ -1,9 +1,10 @@
 package io.txuritan.prometa.creativetab;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import io.txuritan.prometa.Info;
 import io.txuritan.prometa.init.ModItems;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 
 public class CreativeTab
 {

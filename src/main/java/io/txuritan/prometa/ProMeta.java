@@ -5,7 +5,9 @@ import io.txuritan.prometa.init.ModBlocks;
 import io.txuritan.prometa.init.ModItems;
 import io.txuritan.prometa.init.Recipes;
 import io.txuritan.prometa.proxy.CommonProxy;
-import io.txuritan.prometa.world.WorldGenerator;
+import io.txuritan.prometa.world.EndGenerator;
+import io.txuritan.prometa.world.NetherGenerator;
+import io.txuritan.prometa.world.OverworldGenerator;
 
 import java.util.logging.Logger;
 
@@ -32,7 +34,9 @@ public class ProMeta
 	{
 		ModItems.init();
 		ModBlocks.init();
-		GameRegistry.registerWorldGenerator(new WorldGenerator(), 1);
+		GameRegistry.registerWorldGenerator(new OverworldGenerator(), 1);
+		GameRegistry.registerWorldGenerator(new NetherGenerator(), 1);
+		GameRegistry.registerWorldGenerator(new EndGenerator(), 1);
 	}
 	
 	@Mod.EventHandler

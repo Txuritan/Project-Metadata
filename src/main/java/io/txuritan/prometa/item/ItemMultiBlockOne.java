@@ -7,7 +7,10 @@ import net.minecraft.item.ItemStack;
 public class ItemMultiBlockOne extends ItemBlock
 {
 	public ItemMultiBlockOne(Block block)
-	{ super(block); setHasSubtypes(true); }
+	{
+		super(block);
+		setHasSubtypes(true);
+	}
 	
 	@Override
 	public String getUnlocalizedName(ItemStack itemStack)
@@ -38,17 +41,21 @@ public class ItemMultiBlockOne extends ItemBlock
 	
 	@Override
 	public int getMetadata(int meta)
-	{ return meta; }
-	
-	/*@Override
-	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4)
 	{
-		if (StringHelper.displayShiftForDetail && !StringHelper.isShiftKeyDown())
-		{ list.add(StringHelper.shiftForDetails()); }
-		if (!StringHelper.isShiftKeyDown())
-		{ return; }
-		list.add(StringHelper.getInfoText("info.prometa.mod.name"));
-		list.add(StringHelper.getInfoText("info.prometa.ore.one.rarity." + stack.getItemDamage()));
-		list.add(StringHelper.getInfoText("info.prometa.ore.one.dim." + stack.getItemDamage()));
-	}*/
+		return meta;
+	}
+	
+	/*
+	 *@Override
+	 *public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4)
+	 *{
+	 *	if (StringHelper.displayShiftForDetail && !StringHelper.isShiftKeyDown())
+	 *	{ list.add(StringHelper.shiftForDetails()); }
+	 *	if (!StringHelper.isShiftKeyDown())
+	 *	{ return; }
+	 *	list.add(StringHelper.getInfoText("info.prometa.mod.name"));
+	 *	list.add(StringHelper.getInfoText("info.prometa.ore.one.rarity." + stack.getItemDamage()));
+	 *	list.add(StringHelper.getInfoText("info.prometa.ore.one.dim." + stack.getItemDamage()));
+	 *}
+	 */
 }
